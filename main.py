@@ -4,6 +4,8 @@ __human_name__ = 'strings'
 
 # Add your code after this line
 
+# Voorbeeld string format(f'welkom {str(name)}')
+
 
 example = 'Gut von Examplestein'
 goal_0 = 32
@@ -15,7 +17,7 @@ scorer_1 = 'Marco van Basten '
 goal_0 = 32
 goal_1 = 54
 
-scorers = scorer_0 + str(goal_0) + ', ' + scorer_1 + str(goal_1)
+scorers = f"{scorer_0}{str(goal_0)} , {scorer_1}{str(goal_1)}"
 print(scorers)
 
 report = f'{scorer_0} scored in the {str(goal_0)} nd minute  \n{scorer_1} scored in the  {str(goal_1)} th minute'
